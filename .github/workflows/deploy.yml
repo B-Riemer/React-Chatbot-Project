@@ -1,0 +1,39 @@
+# .github/workflows/deploy.yml
+name: Deploy Vite App to GitHub Pages
+
+on:
+  push:
+    branches: ["main"]  # Wird bei jedem Push auf den main-Branch gestartet
+  workflow_dispatch:  # Ermöglicht manuellen Start über die GitHub Actions Seite
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18' # Wähle hier die Node-Version, die du lokal nutzt (z.B. 18 oder 20)
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build Vite Project
+        # Führt deinen Build-Befehl aus, der den 'dist'-Ordner erstellt
+        run: npm run build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: './dist' # Sagt GitHub, dass der Ordner 'dist' die fertigen Dateien enthält
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v3
