@@ -1,12 +1,69 @@
-# React + Vite
+# 💬 React Chatbot Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Jetzt%20ausprobieren-brightgreen)](https://b-riemer.github.io/React-Chatbot-Project/)
+[![GitHub Repo stars](https://img.shields.io/github/stars/B-Riemer/React-Chatbot-Project?style=social)](https://github.com/B-Riemer/React-Chatbot-Project)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Über das Projekt
 
-## Expanding the ESLint configuration
+Dieses Projekt ist ein interaktiver Chatbot, entwickelt als Teil meiner Umschulung zum Fachinformatiker für Anwendungsentwicklung. Das Ziel war die **praktische Anwendung von React und modernen Frontend-Toolchains** (Vite).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Der Chatbot simuliert ein [PLATZHALTER: Kurzbeschreibung der Funktion, z.B. Kundenservice, Wissensdatenbank etc.].
+
+### ✨ Kern-Funktionalität
+
+* **Zustandsverwaltung:** Implementiert mit React Hooks (`useState`, `useEffect`).
+* **Modulare Komponenten:** Der Chat-Dialog und die Eingabekomponenten sind wiederverwendbar.
+* **[PLATZHALTER: Eine technische Besonderheit, z.B. Validierung]**
+* **Responsives Design:** Optimiert für Desktop und mobile Geräte (dank CSS/Bootstrap-Konzepten).
+
+---
+
+## 💻 Technologien
+
+| Kategorie | Technologie | Zweck |
+| :--- | :--- | :--- |
+| **Frontend-Bibliothek** | React | Die Grundlage für die Komponenten-basierte Oberfläche. |
+| **Build Tool** | Vite | Schnelle Entwicklungsumgebung und effizientes Bundling. |
+| **Sprache** | JavaScript (ES6+) | Die logische Basis der Chat-Antworten. |
+| **Styling** | [PLATZHALTER: CSS/Bootstrap/Tailwind] | Für ein modernes, professionelles Erscheinungsbild. |
+| **Deployment** | GitHub Pages & GitHub Actions | Automatischer Deployment-Prozess (CI/CD). |
+
+---
+
+## 🚀 Live-Ansicht
+
+Du kannst den Chatbot sofort im Browser testen.
+
+👉 **[Hier geht's zur Live-Seite: React Chatbot](https://b-riemer.github.io/React-Chatbot-Project/)**
+
+---
+
+## ⚙️ Installation (Für Entwickler)
+
+Wenn du das Projekt lokal starten möchtest:
+
+1.  **Repository klonen:**
+    ```bash
+    git clone https://github.com/B-Riemer/React-Chatbot-Project.git
+    cd React-Chatbot-Project
+    ```
+2.  **Abhängigkeiten installieren:**
+    ```bash
+    npm install
+    ```
+3.  **Entwicklungsserver starten:**
+    ```bash
+    npm run dev
+    ```
+    (Die Anwendung läuft dann unter `http://localhost:5173`)
+
+---
+
+## 👤 Autor
+
+b-riemer.dev
+ai@b-riemer.dev
+
+*(Diese `README.md` ist Teil des Portfolios für die Umschulung zum Fachinformatiker für Anwendungsentwicklung.)*
